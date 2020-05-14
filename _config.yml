@@ -13,16 +13,24 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+title: Dancinllama's Blog
+email: "jwl007 at gmail dot com"
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+  A blog on software development.  Focused on Salesforce development, deployment, and integrations.
+twitter_username: dancinllama
+github_username: dancinllama
+minimal_mistakes_skin: air
 search: true
+
+repository               : "dancinllama/ghp"
+
+comments:
+  provider               : "utterances"
+  utterances:
+    theme                : "github-light"
+    issue_term           : ""
+    repo                 : "dancinllama/ghp"
+    repository           : "dancinllama/ghp"
 
 # Build settings
 markdown: kramdown
@@ -58,35 +66,29 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "James Loghry"
+  avatar : "https://en.gravatar.com/userimage/36823894/b2a7029d51a7e4ae81d1201580de472b.png"
+  bio    : "Salesforce Architect / Developer @ Demand Chain. SI Partner. Salesforce MVP Hall of Fame 2013-2019"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://"
+      url: "https://www.demandchain.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/dancinllama"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
-
+      url: "https://github.com/dancinllama"
+    
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/dancinllama"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
-
+      url: "https://github.com/dancinllama"
+    
 defaults:
   # _posts
   - scope:
