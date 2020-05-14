@@ -8,22 +8,24 @@ tags:
   - update
 ---
 
-You'll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+---
+title: "New Home!"
+header:
+  image: /images/house.png
+categories:
+  - Blog
+  - Uncategorized
+tags:
+---
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+I've moved! I've habitually had many blogs over the years, including blogger, my company('s) blogs, and even guest writing for others.   I feel it's time to consolidate and start fresh.  Since I spend quite a bit of time on github, creating, contributing to, and perusing repositories on here, what better place to move my blog than Github Pages.
 
-Jekyll also offers powerful support for code snippets:
+On this blog, I hope you'll find useful content around:
+- Salesforce Development
+- Salesforce Deployments
+- Salesforce integrations
+- Maybe a bit of Node and Heroku
+- And who knows what else.
 
-```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-```
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Cheers, - James / @dancinLlama
