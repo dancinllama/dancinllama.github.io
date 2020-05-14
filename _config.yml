@@ -28,7 +28,7 @@ comments:
   provider               : "utterances"
   utterances:
     theme                : "github-light"
-    issue_term           : ""
+    issue_term           : "pathname"
     repo                 : "dancinllama/dancinllama.github.io"
     repository           : "dancinllama/dancinllama.github.io"
 
