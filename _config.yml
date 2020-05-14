@@ -22,15 +22,15 @@ github_username: dancinllama
 minimal_mistakes_skin: air
 search: true
 
-repository               : "dancinllama/ghp"
+repository               : "dancinllama/dancinllama.github.io"
 
 comments:
   provider               : "utterances"
   utterances:
     theme                : "github-light"
     issue_term           : ""
-    repo                 : "dancinllama/ghp"
-    repository           : "dancinllama/ghp"
+    repo                 : "dancinllama/dancinllama.github.io"
+    repository           : "dancinllama/dancinllama.github.io"
 
 # Build settings
 markdown: kramdown
