@@ -2,7 +2,7 @@
 permalink: /about/
 title: "About"
 author_profile: true
-layout: home
+layout: about
 ---
 
 ## About Dancinllama
