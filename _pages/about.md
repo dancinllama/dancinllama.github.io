@@ -5,7 +5,7 @@ author_profile: true
 layout: home
 ---
 
-## About Dancinllama123
+## About Dancinllama245
 I am  a Salesforce Architect / Developer with over a decades worth of experience in Salesforce.  I've spent all 10 years in a consulting role.  With my first "gig" at EDL Consulting, we implemented and provided fixes for CloudCraze, or what is now Salesforce B2B Commerce. 
 
 At both EDL Consulting and Demand Chain, I've worked across most Salesforce products with a variety of clients and products, including a storefront for selling hi-fidelity FLAC files for Neil Young's "Pono player", another project that was the precursor to community cloud, reporting integrations for a well known web conferencing platform, integrating Salesforce with an EHR for a well known Mental Health institution, and more.
