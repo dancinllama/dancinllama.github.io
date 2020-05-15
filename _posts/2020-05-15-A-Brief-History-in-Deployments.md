@@ -1,10 +1,13 @@
 ---
-title: "New Home!"
+title: "A Brief History in Salesforce Deployments"
 header:
-  image: /images/house.png
+  overlay_color: "#5e616c"
+  overlay_image: /images/galaxy.jpg
+excerpt: >
+  A Brief History in Salesforce Deployments
 categories:
-  - Blog
-  - Uncategorized
+  - Salesforce
+  - Deployment
 tags:
 ---
 
