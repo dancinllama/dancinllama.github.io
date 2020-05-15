@@ -15,7 +15,7 @@ In addition to work duties, I co-lead the Twin Cities Salesforce Developer Group
 I often get asked why I chose dancinllama as a nickname.  Well it's a lot less cool than it sounds!  I actually wasn't a huge fan of llamas when I picked the name out many moons ago.  Much to my GPA's downfall, I played a lot of video games in college, including Quake III Team Arena and Return to Castle Wolfenstein.  My roommate played with a group as well, and in that group there was someone named "dancing cow".  I thought the name was great.  So when I happened to join a Day of Defeat group called the "Amazing Llama Nation", I borrowed the dancing cow idea and wa-la, dancing llama (or dancinLlama for short) was born.  Since then, I often get gifts of Llama things, which I enjoy, and I've also branched out into Alpacas as well!
 
 
-##Where Else Can You Find Me?
+## Where Else Can You Find Me?
 - [Twitter](http://www.twitter.com/dancinLlama)
 - [LinkedIn](http://www.linkedin.com/jloghry)
 - [irc.freenode.net #salesorce](irc://irc.freenode.net/salesforce)
