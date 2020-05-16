@@ -1,10 +1,10 @@
 ---
-title: "A Brief History in Salesforce Deployments"
+title: "A Brief History in Salesforce DevOps"
 header:
   overlay_color: "#5e616c"
   overlay_image: /images/galaxy.jpg
 excerpt: >
-  In this post, titled "A Brief History in Salesforce Deployments", I discuss the evolution of deploying metadata between environments in Salesforce, and provide insight on tools and products that you can start using today
+  In this post, titled "A Brief History in Salesforce Devops", I discuss the evolution of deploying metadata between environments in Salesforce, and provide insight on tools and products used today
 categories:
   - Salesforce
   - Deployment
@@ -20,6 +20,10 @@ tags:
   - Salesforce DX
   - Change Sets
   - Force.com ANT Migration Toolkit
+  - Gearset
+  - Copado
+  - Flosum
+  - Blue Canvas
 toc: true  
 ---
 
@@ -31,7 +35,7 @@ toc: true
 ## Introduction
 I joined the Salesforce ecosystem in April of 2010.  The API version was API v18.  Change Sets were just announced as a Beta Feature, and deployment strategies were just a blip on the radar and sandboxes still had a new car smell.  Since then, the entire Salesforce platform has evolved.  
 
-Today devops and deployment strategies are a concern, source control is getting better adoption, the Salesforce developer flow has even pivoted with the advent of Salesforce DX.  Let's take a look at how we got here, using a wider-than-just-Salesforce lens, and maybe get a glimpse of what's to come.
+Today devops and deployment strategies are a concern, source control is getting better adoption, the Salesforce developer flow has even pivoted with the advent of Salesforce DX.  Let's take a look at how we got here, using a wider-than-just-Salesforce lens, and maybe get a glimpse of what's to come.  Join me as I walk through a timeline of Salesforce Release Notes [[]] and share my thoughts on related DevOps tools.
 
 ## 2001 - Build Servers
 In 2001, a simple cron-based build server called Cruise Control was released.  CruiseControl allowed allowed DevOps teams (before they were dubbed DevOps) to run builds on a scheduled basis.  The builds, using ANT scripts, could build an application, deploy it to different environments, and even run unit tests.  CruiseControl would end up inspiring more robust Continuous Integration (CI) systems in the near future like Hudson / Jenkins and eventually lead to Continuous Delivery as well.
@@ -82,6 +86,7 @@ Between 2013 and 2017, the progression of development and deployment tools was h
 - Andrew Fawcett and myself writing Apex wrappers for Metadata and Tooling API integrations. [[]]
 - Patrick Connelly and Scot Floess developing Solenopsis, a command line tool for deployments [[]]
 - Apex PMD for statically analyzing Apex code [[]]
+- Heroku apps like Package.xml generator, Perm Comparator, Organization Health Check, and more.
 
 ...And then Dreamforce 2016 hit. [[]]
 
@@ -92,72 +97,27 @@ What is org-centric development? It's when you start development right within a 
 Scratch orgs, along with amazing enhancements to the Salesforce CLI really boosted the productivity of Salesforce development and deploys.  
 
 ## 2017 - Enter Containers and Continuous Delivery
-Around the same time that Salesforce DX was dropped on the community, Docker containers and pipelines became popular, especially in the context of devops and Continuous Delivery (CD) deployments. With the combination of docker and Salesforce DX, I could now:
-1. Start a Salesforce project from Salesforce DX source.
-2. Commit changes to that repostory
-3. On commit:
-  - Run unit tests
-  - Lint any Javascript code, to check syntax errors
-  - Use prettify to format that JS code and commit it right back to the repository
-  - Automatically deploy that code to 
+Around the same time that Salesforce DX was dropped on the community, Docker containers, pipelines, and Continuous Delivery and Deployment tools because popular such as Heroku Pipelines, Bitbucket pipelines, Github Actions, Travis CI, Circle CI, and Salesforce community-led Cumulus CI.  In conjunction with Salesforce DX, these tools allowed Salesforce teams to:
+
+1. Create unique development branches to work on specific tasks
+2. Start truly utilizing source control.
+3. Automate unit tests for both Apex as well as Lightning Web Components.
+4. Automate code analysis and formatting
+5. Automate deployments
+
+It's no mistake that CD tools like the above, along with Salesforce DX, that we started to see another surge in community participation.  In the Salesforce ecosystem we started seeing new IDEs like Illuminated Cloud, Welkin Suite, and of course Visual Studio Code extensions.  Additionally,  partners like GearSet, Copado, Blue Canvas, and Flosum started thriving as Salesforce teams realized the importance of Salesforce DX and Devops.
+
+## 2020 - Current Day
+And that brings us to current day Salesforce DevOps.  Salesforce DX has really spurred the continued growth of Salesforce Devops.  Partners continue to invent new tools or enhance existing tools.  At the same time, DX has allowed teams to take full advantage of modern day CI and CD tools outside of Salesforce.  In fact, if you'd like to get started with Salesforce DX and Github Actions, you're in luck.  Feel free to use my Github template repository: https://github.com/dancinllama/sfdx-template.  Please fork the repo and send in any pull requests you might have.
+
+Where do we go from here, you might ask? It'll take a long time, but we'll start seeing even wider adoption with Devops, and in particular Continuous Delivery.  There's still a huge gap with Salesforce customers not even adopting Source Control.  However, we'll see that gap narrow, it's just a matter of how long and how much at this point.  Salesforce is even rolling out the following feature in Summer 2020:  [https://releasenotes.docs.salesforce.com/en-us/summer20/release-notes/rn_sandboxes_source_tracking.htm](Track Source changes in Sandboxes Automatically).  This will help with source control adoption, but also I'm curious how it'll play into a DevOps strategy. 
+
+## Conclusion
+What did you think of this article?  Anything I missed?  Have a favorite CI / CD tool or Salesforce DevOps tool that you use?  Is your Salesforce org or are your clients utilizing source control?  Comment below, I would love to hear!
+
+Cheers,
+- James
 
 
 
 
-
-or who  you would develop something within Salesforce, maybe even in production, and then bring that function down to a Sandbox.  Rarely was source control ever in the picture.
-
-
-In my opinion, Salesforce really switched from being a CRM system to a Platform back in 2
-
-Before we dive into the history of Salesforce deployments, I'll provide some background on my personal Salesforce journey.  As of 2010, I was working as a contractor for IBM.  Agile was really catching on fire. I was focused on a product called "Fix Central", and I had created a build system for the product utilizing a rudimentary CI or Continuous Integration server called Cruise Control.  
-
-At the time, IBM had been pushing its Rational products hard, including it's own CI solution with Rational Team Concert. However, much like everything else at IBM, Rational Team Concert was a pain to setup, configure, and use.  Hence, I rolled with Cruise Control.  Cruise Control was nothing more than a glorified cron job that ran ANT scripts on a scheduled basis.  It was simple, and it did it's thing well.
-
-Around the same time, my office mate and mentor and started working for a consulting partner on a product called Salesforce.  After my pay was cut at IBM, I decided to join my mentor at EDL Consulting (and CloudCraze).  I had no clue what Salesforce was at this time, but was told that I could pick it up easily, since I had a Java and J2EE background.  
-
-## API Version 18 - Change Sets Go Beta
-I first joined the Salesforce ecosystem back in 2010.  The API version was 18.0, and one of the popular issues of that release cycle?  Change Sets are Beta. As consultants, we preached about completing work in Sandboxes and promoting "up the stack" until finally deploying functionality to production.  I didn't realize it at first, but deployments were a huge pain point for Administrators at the time.
-
-Back then, there were four main ways of deploying from a Salesforce sandbox to a Salesforce production org:
-
-1. Deploy through Eclipse.
-2. Use an unmanaged package
-3. Write an ANT migration script, utilizing the ant-salesforce.jar and package.xml.
-4. Redo whatever you had already done by hand.
-
-None of these options were very friendly for administrators.  Hence, change sets were a huge deal when they were first announced, and really continue to be an integral functionality today, regardless of how much you loathe the user interface.
-
-## Building Deployment Confidence
-Change Sets were and continue to be a decent, popular mechanism for one off deployments.  What happens though, when you're working through a long term project or you need to keep your Salesforce organizations in synch, and organized? You need a deployment strategy,  and in particular a repetitive deployment strategy in order to build confidence in your application.  
-
-In 2010, Salesforce's support for this was minimal.  As a consultant, I worked on several projects, and at the time, not a single one of the team's I worked on had a deployment strategy or tools to help.  In fact, only a handful of peers in the community were utilizing Continuous Integration, and even less utilzed any sort of source control system, aside from  their own PC or Mac. Of those few peers, they used the Metadata API, and more specifically the Force.com ANT Migration Toolkit.
- 
-Shortly after 2010, the Salesforce community started seeing some improvement in the development tooling.  The real push for tooling improvement came from Joe Ferrero, creator of MavensMate.  We started seeing improvements to the Metadata API to support community-led products like MavensMate.  Eventually, in 2013, we saw the creation of the Tooling API, which helped address some gaps associated with the Metadata API.
-
-## Salesforce Tooling and Salesforce DX
-
-## Third Party Products
-
-## Continuous Delivery
-
-## What Should We Focus On?
-
-## Release Notes
-Most of the research I've put into this blog, was done by cultivating past release notes.  For a bit of nostalgia, you can dig through past release notes yourself!  This post on Salesforce Stack Exchange contains links to all (or at least most) past release notes: https://salesforce.stackexchange.com/questions/40411/where-are-all-past-salesforce-release-notes.  Some release notes date all the way back to 2004. 
-
-
-## References
-<a id="1">[1]</a>https://en.wikipedia.org/wiki/CruiseControl
-<a id="2">[2]</a>https://en.wikipedia.org/wiki/CruiseControl
-<a id="3">[3]</a>https://en.wikipedia.org/wiki/Hudson_(software)
-
- https://github.com/solenopsis/Solenopsis
- https://pmd.github.io/latest/pmd_rules_apex.html
- https://developer.salesforce.com/dreamforce/2016-recap
- 
- 
-<a id="1">[1]</a> Atlassian - What is DevOps?
-
-
-Cheers, - James / @dancinLlama
