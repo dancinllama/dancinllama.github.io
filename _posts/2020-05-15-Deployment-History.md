@@ -37,6 +37,8 @@ I joined the Salesforce ecosystem in April of 2010.  The API version was API v18
 
 Today devops and deployment strategies are a concern, source control is getting better adoption, the Salesforce developer flow has even pivoted with the advent of Salesforce DX.  Let's take a look at how we got here, using a wider-than-just-Salesforce lens, and maybe get a glimpse of what's to come.  Join me as I walk through a timeline of Salesforce Release Notes [[1]](#1) and share my thoughts on related DevOps tools.
 
+![Timeline](/images/timeline.png)
+
 ## 2001 - Build Servers
 In 2001, a simple cron-based build server called Cruise Control was released.  CruiseControl allowed allowed DevOps teams (before they were dubbed DevOps) to run builds on a scheduled basis.  The builds, using ANT scripts, could build an application, deploy it to different environments, and even run unit tests.  CruiseControl would end up inspiring more robust Continuous Integration (CI) systems in the near future like Hudson / Jenkins and eventually lead to Continuous Delivery as well.
 
@@ -44,7 +46,7 @@ As a contractor at IBM, I worked on a product called Fix Central.  We maintained
 
 ## 2006 - Sandboxes
 
-(/images/dontalwaystestmycode.jpg)
+![Dont Test Code In Production](/images/dontalwaystestmycode.jpg)
 
 Speaking of environments, in the Winter 2006 release, Salesforce also saw a need to move development from production to a sandbox environment and introduced "Salesforce Sandbox".  Salesforce Sandbox allowed administrators to copy Production to a sandbox or test environment, and allowed them to test changes before promoting to production.  Although Salesforce was not on my radar in 2006, I can only imagine how painful those deployments must have been. 
 
