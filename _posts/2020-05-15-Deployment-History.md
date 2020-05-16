@@ -27,8 +27,6 @@ tags:
 toc: true  
 ---
 
-(/images/changesetbeta.png)
-
 **Author / Editor's Note** I thought I was clever when I came up for the title of this blog.  Obviously, it's a play on Stephen Hawking's title.  However, a quick google search on Continuous Integration and Continous Delivery lead me to this blog, which shares a very similar title: https://circleci.com/blog/drawn-out-conversation-featuring-circleci-principal-software-engineer-pat-shields/.  Great minds think alike?
 {: .notice--primary}
 
@@ -118,19 +116,19 @@ Cheers,
 - James
 
 ## References
-<a id="1">[1]</a>https://salesforce.stackexchange.com/questions/40411/where-are-all-past-salesforce-release-notes
-<a id="2">[2]</a>https://en.wikipedia.org/wiki/CruiseControl
-<a id="3">[3]</a>http://resources.docs.salesforce.com/142/latest/en-us/sfdc/pdf/salesforce_winter06_release_notes.pdf
-<a id="4">[4]</a>https://en.wikipedia.org/wiki/Hudson_(software)
-<a id="5">[5]</a>http://resources.docs.salesforce.com/152/latest/en-us/sfdc/pdf/salesforce_spring08_release_notes.pdf
-<a id="6">[6]</a>http://resources.docs.salesforce.com/164/latest/en-us/sfdc/pdf/salesforce_spring10_release_notes.pdf
-<a id="7">[7]</a>http://resources.docs.salesforce.com/182/latest/en-us/sfdc/pdf/salesforce_spring13_release_notes.pdf
-<a id="8">[8]</a>http://solenopsis.org/
-<a id="9">[9]</a>https://pmd.github.io/latest/pmd_rules_apex.html
-<a id="10">[10]</a>https://perm-comparator.herokuapp.com/
-<a id="11">[11]</a>https://packagebuilder.herokuapp.com/
-<a id="12">[12]</a>https://orgdoctor.herokuapp.com/
-<a id="13">[13]</a>https://developer.salesforce.com/dreamforce/2016-recap
+- <a id="1">[1]</a> https://salesforce.stackexchange.com/questions/40411/where-are-all-past-salesforce-release-notes
+- <a id="2">[2]</a> https://en.wikipedia.org/wiki/CruiseControl
+- <a id="3">[3]</a> http://resources.docs.salesforce.com/142/latest/en-us/sfdc/pdf/salesforce_winter06_release_notes.pdf
+- <a id="4">[4]</a> https://en.wikipedia.org/wiki/Hudson_(software)
+- <a id="5">[5]</a> http://resources.docs.salesforce.com/152/latest/en-us/sfdc/pdf/salesforce_spring08_release_notes.pdf
+- <a id="6">[6]</a> http://resources.docs.salesforce.com/164/latest/en-us/sfdc/pdf/salesforce_spring10_release_notes.pdf
+- <a id="7">[7]</a> http://resources.docs.salesforce.com/182/latest/en-us/sfdc/pdf/salesforce_spring13_release_notes.pdf
+- <a id="8">[8]</a> http://solenopsis.org/
+- <a id="9">[9]</a> https://pmd.github.io/latest/pmd_rules_apex.html
+- <a id="10">[10]</a> https://perm-comparator.herokuapp.com/
+- <a id="11">[11]</a> https://packagebuilder.herokuapp.com/
+- <a id="12">[12]</a> https://orgdoctor.herokuapp.com/
+- <a id="13">[13]</a> https://developer.salesforce.com/dreamforce/2016-recap
 
 
 
