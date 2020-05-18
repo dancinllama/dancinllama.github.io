@@ -34,7 +34,7 @@ trigger caseOwnerUpdate on Case (after update) {
         }   
     }
   
-    System.debug('&gt;&gt;&gt;&gt;&gt;Update Cases: '+updateCS);
+    System.debug('Update Cases: '+updateCS);
     
     //
     //Update last assignment for Assignment Group in batch
