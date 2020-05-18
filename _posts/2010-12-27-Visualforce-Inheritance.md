@@ -1,3 +1,13 @@
+---
+title: "Inheritance and Visualforce page controllers"
+categories:
+  - Salesforce
+tags:
+  - Visualforce
+  - Apex
+toc: false
+---
+
 Salesforce Apex is pretty finicky with inheritance in comparison to Java.
 
 Even though it is Java based, there are many caveats, especially in inheritance and OO related principles.
