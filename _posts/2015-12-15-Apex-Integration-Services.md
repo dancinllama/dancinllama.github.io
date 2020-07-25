@@ -11,6 +11,8 @@ tags:
 toc: false
 ---
 
+![Apex Integration Services badge](/images/integrationbadge.png)
+
 As an integration architect, I spend a substantial amount of time with clients discussing how to integrate with their systems external to Salesforce.  Most times, fortunately, clients have a pre-existing system with a set of available APIs that are exposed either as RESTful or SOAP APIs.
 
 A prime example of this, is the work I helped with on a hi-fidelity music service.  In order to get licensing information, track and album details, and other information, we made several RESTful calls out to a music content provider.  Additionally, we used SOAP services to handle payment processing, tax calculations, and address verification.
