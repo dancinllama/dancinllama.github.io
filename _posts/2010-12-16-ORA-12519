@@ -1,0 +1,18 @@
+---
+title: "ORA-12519"
+excerpt: >
+  Discussing an old issue I came across with Oracle BPEL middleware.
+categories:
+  - Oracle
+  - Integration
+tags:
+  - Integration
+  - BPEL
+toc: false
+---
+I created a polling adapter in my BPEL process.  Once I threw it on the server, it caused the Oracle XE (10.1.3?) database to crash.  After the database crashed, I could not view the BPEL console nor execute any commands on the database through SQL Developer.  The error I received was 'ORA-12519'.
+
+What happens is that the XE database by default only allows a small number of connections.  BPEL consumes those connections rather quickly. If you encounter this problem, restart the XE database:
+- Perform the following SQL as SYS user: ALTER SYSTEM SET PROCESSES=150 SCOPE=SPFILE
+- Restart the database
+- Restart BPEL / SOA
