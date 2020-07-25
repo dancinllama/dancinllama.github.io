@@ -22,7 +22,8 @@ In Lightning Components, you can easily utilize JavaScript controller logic to t
     var el = component.find('myAuraIdGoesHere');
     $A.util.toggleClass(el,'slds-transition-hide');
   }
-})```
+})
+```
 
 Combining the toggleClass method along with the slds-transition-hide class from the Lightning Design System, allows you to hide (and show) elements when some event happens within your lightning component, such as clicking on a close button or perhaps swiping an element left or right in a tindr-like fashion.
 
@@ -32,7 +33,8 @@ The opacity is set from 0 to 1 immediately, and can be "jarring" to the user.
 The opaque / hidden element still takes up space on the screen if it's a block layout, such as a div.
 Enter CSS and Styling.  The Visibility documentation on the Lightning Design System hints that you should use a transition property to control transition and animation of the element you're hiding: 
 
-"Note: To control the timing of the transition, add an additional transition property to control the opacity change."
+**Note**  To control the timing of the transition, add an additional transition property to control the opacity change.
+{: .notice--primary}
 
 The transition property is a CSS style you can give an element to control a limited set of properties such as the opacity and the height of an element.  Unfortunately, the display property is one that you cannot transition on.  In other words, I can't transition from display: inline-block to display: none.  So, to get around the 2nd limitation of the slds-transition-hide styling, we'll have to utilize the height of our element and "shrink" the element over a duration of time.  To do this, I extended two of the classes I'm using in the Lightning Design System by modifying the "Style" of my Lightning Component Bundle:
 
@@ -45,7 +47,8 @@ The transition property is a CSS style you can give an element to control a limi
   height: auto;
   max-height: 0;
   transition: opacity 2s linear, max-height 2s linear;
-}```
+}
+```
 
 First, I had to guess the max-height of my div.  The div height is variable, but it *should* never exceed a height of 250px.  Without setting the max height of the visible div, the transition has nothing to compare to the new max-height, so you get a very jarring and immediate transition to 0px if that's the case.  Try it for yourself and you'll see what I mean.
 
@@ -95,7 +98,8 @@ So now that I've showed you both the component bundle's controller and the compo
       </div>
     </div>
   </div>
-</aura:component>```
+</aura:component>
+```
 
 In the component above, when you click on the close icon, it calls the hideMe method in the controller, which toggles the CSS class starts the CSS transition.  Putting it all together, here's what the component looks like in action:
 
