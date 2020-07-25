@@ -17,7 +17,8 @@ There are several goodies and easter eggs in the Lightning Design System, includ
 
 In Lightning Components, you can easily utilize JavaScript controller logic to toggle CSS, utilizing a method like below:
 
-```({
+```
+({
   hideMe : function(component, event) {
     var el = component.find('myAuraIdGoesHere');
     $A.util.toggleClass(el,'slds-transition-hide');
@@ -38,7 +39,8 @@ Enter CSS and Styling.  The Visibility documentation on the Lightning Design Sys
 
 The transition property is a CSS style you can give an element to control a limited set of properties such as the opacity and the height of an element.  Unfortunately, the display property is one that you cannot transition on.  In other words, I can't transition from display: inline-block to display: none.  So, to get around the 2nd limitation of the slds-transition-hide styling, we'll have to utilize the height of our element and "shrink" the element over a duration of time.  To do this, I extended two of the classes I'm using in the Lightning Design System by modifying the "Style" of my Lightning Component Bundle:
 
-```.THIS.slds-media{
+```
+.THIS.slds-media{
   max-height: 250px;
 } 
 
@@ -56,7 +58,8 @@ The second class gets toggled when a close button is clicked in my lightning com
 
 So now that I've showed you both the component bundle's controller and the component bundle's style, let's take a peek at what the component itself looks like:
 
-```<aura:component >
+```
+<aura:component >
   <aura:attribute name="someType" type="SomeTypeGoesHere" description="Some Description" />
   <ltng:require styles="/resource/LightningDesignSystem/assets/styles/salesforce-lightning-design-system-vf.css" />
   <div class="slds-media slds-tile slds-hint-parent" aura:id="myElementId">
