@@ -17,7 +17,8 @@ Solution: Feed a dummy data value into the Campaign name through a custom Visual
 
 - Create a Controller extension to prepopulate the Campaign Name:
 
-```public with sharing class CampaignExtension {
+```
+public with sharing class CampaignExtension {
   public CampaignExtension(ApexPages.StandardController stdController) {}
 
   public PageReference gotoUrl(){
@@ -37,7 +38,7 @@ Solution: Feed a dummy data value into the Campaign name through a custom Visual
   
 - Create a VF page:
 
-```<apex:page standardController="Campaign" extensions="CampaignExtension" action="{!gotoUrl}">
+```<apex:page standardController="Campaign" extensions="CampaignExtension" action="{!gotoUrl}"></apex:page>
 ```
 
 - Override standard new button for Campaign:
