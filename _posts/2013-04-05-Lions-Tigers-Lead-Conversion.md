@@ -24,7 +24,8 @@ A few things I needed to consider were:
 
 
 
-```List leadConversions = new List();
+```
+List leadConversions = new List();
 for(Lead l : leadsToConvert){
   Database.LeadConvert lc = new Database.LeadConvert();
   if(l.Contact__r != null){
