@@ -12,7 +12,7 @@ toc: false
 
 Salesforce provides us with a standard state and country picklist that is useful, but only in a limited context.  The state and country picklists, are at the moment, unavailable outside of standard objects / standard address fields.  So how do you mimmick this functionality for custom fields?
 
-I've created a simple Apex app that you can use at the following repository: [https://github.com/dancinllama/StateAndCountryPicklistGenerator]
+I've created a simple Apex app that you can use at the following repository: <a href="https://github.com/dancinllama/StateAndCountryPicklistGenerator" target="_new">https://github.com/dancinllama/StateAndCountryPicklistGenerator</a>
 
 The "app" consists of two Apex classes and allows you to copy the standard state and country picklists into a global value set and custom fields of your choosing.
 
