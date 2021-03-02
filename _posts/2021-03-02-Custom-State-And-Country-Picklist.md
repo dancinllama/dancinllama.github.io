@@ -10,7 +10,9 @@ tags:
 toc: false  
 ---
 
-Salesforce provides us with a standard state and country picklist that is useful, but only in a limited context.  The state and country picklists, are at the moment, unavailable outside of standard objects / standard address fields.  So how do you mimmick this functionality for custom fields?
+Salesforce provides us with a standard state and country picklist that is useful, but only in a limited context.  The state and country picklists, are at the moment, unavailable outside of standard objects / standard address fields.  There is an old idea for this here: <a href="https://trailblazer.salesforce.com/ideaView?id=08730000000BrVWAA0" target="_new">https://trailblazer.salesforce.com/ideaView?id=08730000000BrVWAA0</a>.  
+
+So how can you mimmick this functionality for custom fields today?
 
 I've created a simple Apex app that you can use at the following repository: <a href="https://github.com/dancinllama/StateAndCountryPicklistGenerator" target="_new">https://github.com/dancinllama/StateAndCountryPicklistGenerator</a>
 
