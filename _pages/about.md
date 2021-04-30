@@ -18,7 +18,6 @@ I often get asked why I chose dancinllama as a nickname.  Well it's a lot less c
 
 
 ## Where Else Can You Find Me?
-- [Twitter](http://www.twitter.com/dancinLlama)
 - [LinkedIn](http://www.linkedin.com/jloghry)
 - [irc.freenode.net #salesorce](irc://irc.freenode.net/salesforce)
 - [Salesforce Stack Exchange](https://salesforce.stackexchange.com/users/267/)
